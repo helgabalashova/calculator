@@ -57,13 +57,14 @@ public class CalculatorTestThorough {
         Calculator myCalculator = new Calculator();
 
         String failureMessage =  "/ by zero";
-        for(int i = 1 ; i < 100000 ; i++){
+        for(int i = 1 ; i < 1000; i++){
             try{
 
                 myCalculator.divide(i, 0);
                 fail();
             }
             catch (ArithmeticException e){
+                System.out.println("Something");
                 assertTrue(failureMessage.contains(e.getMessage()));
             }
         }
