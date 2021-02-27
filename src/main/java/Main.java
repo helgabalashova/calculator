@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main() {
         Calculator calc = new Calculator();
         System.out.println("Enter a command:");
         Scanner scanner = new Scanner(System.in);
