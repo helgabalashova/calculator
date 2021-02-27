@@ -64,6 +64,9 @@ class Calculator {
         if (n==0) {
             return "0";
         }
+        if (n == 1) {
+            // do nothing
+        }
         String s = "";
         while (n > 0) {
             String s1 = String.valueOf(n % 2);
