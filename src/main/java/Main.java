@@ -17,7 +17,7 @@ public class Main {
             System.out.println(res);
         }
         else if (command.equals("intToBinaryNumber")) {
-            int res = calc.intToBinaryNumber(Integer.valueOf(args[1]));
+            String res = calc.intToBinaryNumber(Integer.valueOf(args[1]));
             System.out.println(res);
         }
         return 0;
