@@ -31,12 +31,12 @@ public class Main {
                 int res = calc.divide(a, b);
                 System.out.println(res);
             }
-            else if (command.equals("fibonacciNumberFinder")) {
+            else if (command.equals("fibonacci")) {
                 int a = scanner.nextInt();
                 int res = calc.fibonacciNumberFinder(a);
                 System.out.println(res);
             }
-            else if (command.equals("intToBinaryNumber")) {
+            else if (command.equals("binary")) {
                 int a = scanner.nextInt();
                 String res = calc.intToBinaryNumber(a);
                 System.out.println(res);
