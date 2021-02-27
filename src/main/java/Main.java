@@ -15,7 +15,7 @@ public class Main {
         else if (command.equals("subtract")) {
             int a = scanner.nextInt();
             int b  = scanner.nextInt();
-            int res = calc.subtract(Integer.valueOf(a, b);
+            int res = calc.subtract(a, b);
             System.out.println(res);
         }
         else if (command.equals("fibonacciNumberFinder")) {
