@@ -68,7 +68,7 @@ class Calculator {
         while (n > 0) {
             String s1 = String.valueOf(n % 2);
             s = s1 + s;
-            n = n/2;
+            n = n/2; //comment
         }
         return s;
     }
