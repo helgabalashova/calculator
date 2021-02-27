@@ -2,22 +2,30 @@
 public class Main {
 
     public static void main(String[] args) {
-        String command = args[0];
         Calculator calc = new Calculator();
+        System.out.println("Enter a command:");
+        Scanner scanner = new Scanner(System.in);
+        String command = scanner.next();
         if  (command.equals("add")) {
-            int res = calc.add(Integer.valueOf(args[1]), Integer.valueOf(args[2]));
+            int a = scanner.nextInt();
+            int b  = scanner.nextInt();
+            int res = calc.add(a, b);
             System.out.println(res);
         }
         else if (command.equals("subtract")) {
-            int res = calc.subtract(Integer.valueOf(Integer.valueOf(args[1])), Integer.valueOf(args[2]));
+            int a = scanner.nextInt();
+            int b  = scanner.nextInt();
+            int res = calc.subtract(Integer.valueOf(a, b);
             System.out.println(res);
         }
         else if (command.equals("fibonacciNumberFinder")) {
-            int res = calc.fibonacciNumberFinder(Integer.valueOf(args[1]));
+            int a = scanner.nextInt();
+            int res = calc.fibonacciNumberFinder(a);
             System.out.println(res);
         }
         else if (command.equals("intToBinaryNumber")) {
-            String res = calc.intToBinaryNumber(Integer.valueOf(args[1]));
+            int a = scanner.nextInt();
+            String res = calc.intToBinaryNumber(a);
             System.out.println(res);
         }
     }
