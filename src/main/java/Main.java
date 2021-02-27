@@ -5,19 +5,19 @@ public class Main {
         String command = args[0];
         Calculator calc = new Calculator();
         if  (command.equals("add")) {
-            int res = calc.add(args[1], args[2]);
+            int res = calc.add(Integer.valueOf(args[1]), Integer.valueOf(args[2]));
             System.out.println(res);
         }
         else if (command.equals("subtract")) {
-            int res = calc.subtract(args[1], args[2]);
+            int res = calc.subtract(Integer.valueOf(args[1]), Integer.valueOf(args[2]));
             System.out.println(res);
         }
         else if (command.equals("fibonacciNumberFinder")) {
-            int res = calc.fibonacciNumberFinder(args[1]);
+            int res = calc.fibonacciNumberFinder(Integer.valueOf(args[1]));
             System.out.println(res);
         }
         else if (command.equals("intToBinaryNumber")) {
-            int res = calc.intToBinaryNumber(args[1]);
+            int res = calc.intToBinaryNumber(Integer.valueOf(args[1]));
             System.out.println(res);
         }
         return 0;
