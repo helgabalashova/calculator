@@ -20,6 +20,5 @@ public class Main {
             String res = calc.intToBinaryNumber(Integer.valueOf(args[1]));
             System.out.println(res);
         }
-        return 0;
     }
 }
