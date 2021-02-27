@@ -9,7 +9,7 @@ public class Main {
             System.out.println(res);
         }
         else if (command.equals("subtract")) {
-            int res = calc.subtract(Integer.valueOf(args[1]), Integer.valueOf(args[2]));
+            int res = calc.subtract(Integer.valueOf(Integer.valueOf(args[1])), Integer.valueOf(args[2]));
             System.out.println(res);
         }
         else if (command.equals("fibonacciNumberFinder")) {
