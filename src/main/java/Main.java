@@ -19,6 +19,12 @@ public class Main {
                 int res = calc.subtract(a, b);
                 System.out.println(res);
             }
+            else if (command.equals("multiply")) {
+                int a = scanner.nextInt();
+                int b  = scanner.nextInt();
+                int res = calc.multiply(a, b);
+                System.out.println(res);
+            }
             else if (command.equals("fibonacciNumberFinder")) {
                 int a = scanner.nextInt();
                 int res = calc.fibonacciNumberFinder(a);
